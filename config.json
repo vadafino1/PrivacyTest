@@ -1,0 +1,81 @@
+{
+  "application": {
+    "name": "PrivacyTestApp",
+    "version": "1.0.0",
+    "environment": "production"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "privacy_test_db",
+    "username": "admin",
+    "password": "SuperSecretPassword123!",
+    "connection_string": "postgresql://admin:SuperSecretPassword123!@localhost:5432/privacy_test_db"
+  },
+  "api_keys": {
+    "google_api_key": "AIzaSyDxyz123456789abcdefghijklmnopqrstuvw",
+    "stripe_secret_key": "sk_live_fake_51HCgMAD5L5DhKR1M9I4vGo3wZzjH2jIqpKnJgCKYZo6XRMqGYhpvLZGrWe8MZJXf2nYfQRJkjH8hNdv",
+    "stripe_publishable_key": "pk_live_fake_51HCgMAD5L5DhKR1M9I4vGo3wZzjH2jIqpKnJgCKYZo6XRMqGYhpvLZGrWe8MZJXf2nYfQRJkjH8hNdv",
+    "facebook_app_secret": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+    "twitter_api_key": "abcdefghijklmnopqrstuvwxyz1234567890",
+    "twitter_api_secret": "1234567890abcdefghijklmnopqrstuvwxyzABCDEF"
+  },
+  "twilio": {
+    "account_sid": "TWL6ffc125ba936a44d3b6e80d1b5c3e1234",
+    "auth_token": "your_auth_token_here_12345678",
+    "phone_number": "+1234567890"
+  },
+  "aws": {
+    "access_key_id": "AKIAIOSFODNN7EXAMPLE",
+    "secret_access_key": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+    "region": "us-east-1",
+    "bucket_name": "privacy-test-bucket"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "password": "RedisPassword123!"
+  },
+  "jwt": {
+    "secret": "super-secret-jwt-signing-key-2024",
+    "expiration": "24h"
+  },
+  "encryption": {
+    "key": "MyEncryptionKey123456789!@#$%^&*()",
+    "algorithm": "aes-256-cbc"
+  },
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "secure": false,
+    "auth": {
+      "user": "admin@example.com",
+      "pass": "EmailPassword123!"
+    }
+  },
+  "oauth": {
+    "google": {
+      "client_id": "123456789012-abcdefghijklmnopqrstuvwxyz.apps.googleusercontent.com",
+      "client_secret": "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45"
+    },
+    "github": {
+      "client_id": "Iv1.a1b2c3d4e5f6g7h8",
+      "client_secret": "ghcs_1234567890abcdefghijklmnopqrstuvwxyz12"
+    }
+  },
+  "admin": {
+    "username": "admin",
+    "password": "AdminPassword123!",
+    "email": "admin@example.com",
+    "api_token": "admin-token-12345-67890-abcdef"
+  },
+  "monitoring": {
+    "sentry_dsn": "https://abc123def456@o123456.ingest.sentry.io/123456",
+    "datadog_api_key": "ab12cd34ef56gh78ij90kl12mn34op56",
+    "newrelic_license_key": "eu01xxabcdefghijklmnopqrstuvwxyz1234NRAL"
+  },
+  "third_party_services": {
+    "slack_webhook": "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX",
+    "discord_bot_token": "ODc2NTQzMjEwOTg3NjU0MzIx.YR7G_w.abcdefghijklmnopqrstuvwxyz123456"
+  }
+}

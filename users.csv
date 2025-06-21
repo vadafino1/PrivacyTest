@@ -1,0 +1,21 @@
+id,username,email,first_name,last_name,phone,ssn,credit_card,address,date_of_birth,salary,employee_id
+1,jdoe,john.doe@email.com,John,Doe,555-123-4567,123-45-6789,4532123456789012,"123 Main St, Anytown, NY 12345",1985-03-15,75000,EMP001
+2,asmith,alice.smith@email.com,Alice,Smith,555-234-5678,234-56-7890,5555123456789013,"456 Oak Ave, Springfield, CA 90210",1990-07-22,82000,EMP002
+3,bwilson,bob.wilson@email.com,Bob,Wilson,555-345-6789,345-67-8901,4111123456789014,"789 Pine Rd, Riverside, TX 75001",1988-11-08,68000,EMP003
+4,cjohnson,carol.johnson@email.com,Carol,Johnson,555-456-7890,456-78-9012,4000123456789015,"321 Elm St, Lakewood, FL 33101",1992-02-14,91000,EMP004
+5,dmiller,david.miller@email.com,David,Miller,555-567-8901,567-89-0123,5105123456789016,"654 Maple Dr, Hillview, WA 98001",1987-09-30,77500,EMP005
+6,ewilliams,emma.williams@email.com,Emma,Williams,555-678-9012,678-90-1234,4222123456789017,"987 Cedar Ln, Greenfield, OR 97001",1993-12-05,85500,EMP006
+7,fgarcia,frank.garcia@email.com,Frank,Garcia,555-789-0123,789-01-2345,4444123456789018,"147 Birch Ct, Fairview, CO 80301",1986-06-18,72000,EMP007
+8,gmartinez,grace.martinez@email.com,Grace,Martinez,555-890-1234,890-12-3456,5200123456789019,"258 Spruce Way, Midtown, AZ 85001",1991-04-27,89000,EMP008
+9,hbrown,henry.brown@email.com,Henry,Brown,555-901-2345,901-23-4567,4300123456789020,"369 Willow St, Eastside, NV 89101",1989-01-12,73500,EMP009
+10,ilee,isabella.lee@email.com,Isabella,Lee,555-012-3456,012-34-5678,4700123456789021,"741 Aspen Blvd, Westfield, ID 83001",1994-08-03,94000,EMP010
+11,jrodriguez,james.rodriguez@email.com,James,Rodriguez,555-123-4568,123-45-6788,4532123456789022,"852 Poplar Ave, Northgate, MT 59001",1983-05-20,81000,EMP011
+12,kthompson,karen.thompson@email.com,Karen,Thompson,555-234-5679,234-56-7891,5555123456789023,"963 Hickory Rd, Southpark, UT 84001",1990-10-15,78000,EMP012
+13,lwhite,lisa.white@email.com,Lisa,White,555-345-6780,345-67-8902,4111123456789024,"159 Walnut Dr, Central City, KS 66001",1987-03-08,86500,EMP013
+14,mharris,michael.harris@email.com,Michael,Harris,555-456-7891,456-78-9013,4000123456789025,"267 Chestnut St, Riverside, OK 73001",1992-12-22,92500,EMP014
+15,nclark,nancy.clark@email.com,Nancy,Clark,555-567-8902,567-89-0124,5105123456789026,"375 Beech Ln, Highland, AR 72001",1988-07-11,79500,EMP015
+16,olewis,oscar.lewis@email.com,Oscar,Lewis,555-678-9013,678-90-1235,4222123456789027,"486 Sycamore Way, Lakeside, LA 70001",1985-09-04,87000,EMP016
+17,pwalker,patricia.walker@email.com,Patricia,Walker,555-789-0124,789-01-2346,4444123456789028,"591 Magnolia Ct, Hillcrest, MS 39001",1993-01-29,83500,EMP017
+18,qhall,quincy.hall@email.com,Quincy,Hall,555-890-1235,890-12-3457,5200123456789029,"602 Dogwood Blvd, Valleyview, AL 35001",1991-06-16,88500,EMP018
+19,rallen,rachel.allen@email.com,Rachel,Allen,555-901-2346,901-23-4568,4300123456789030,"713 Redwood Ave, Mountainview, TN 37001",1989-11-07,76000,EMP019
+20,syoung,steven.young@email.com,Steven,Young,555-012-3457,012-34-5679,4700123456789031,"824 Cypress Dr, Seaside, SC 29001",1986-04-25,90000,EMP020

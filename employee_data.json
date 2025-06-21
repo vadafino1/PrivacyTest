@@ -1,0 +1,322 @@
+[
+  {
+    "employee_id": "EMP001",
+    "personal_info": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@company.com",
+      "phone": "555-123-4567",
+      "ssn": "123-45-6789",
+      "date_of_birth": "1985-03-15",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "NY",
+        "zip": "12345"
+      }
+    },
+    "employment": {
+      "department": "Engineering",
+      "position": "Senior Software Engineer",
+      "hire_date": "2020-01-15",
+      "salary": 125000,
+      "manager": "Sarah Johnson",
+      "employee_type": "Full-time"
+    },
+    "financial": {
+      "bank_account": "123456789",
+      "routing_number": "021000021",
+      "direct_deposit": true,
+      "tax_id": "123-45-6789"
+    },
+    "medical": {
+      "insurance_id": "INS-123456",
+      "emergency_contact": {
+        "name": "Jane Doe",
+        "relationship": "Spouse",
+        "phone": "555-987-6543"
+      },
+      "medical_conditions": ["Diabetes", "Hypertension"]
+    }
+  },
+  {
+    "employee_id": "EMP002",
+    "personal_info": {
+      "first_name": "Alice",
+      "last_name": "Smith",
+      "email": "alice.smith@company.com",
+      "phone": "555-234-5678",
+      "ssn": "234-56-7890",
+      "date_of_birth": "1990-07-22",
+      "address": {
+        "street": "456 Oak Ave",
+        "city": "Springfield",
+        "state": "CA",
+        "zip": "90210"
+      }
+    },
+    "employment": {
+      "department": "Marketing",
+      "position": "Marketing Manager",
+      "hire_date": "2019-03-01",
+      "salary": 95000,
+      "manager": "Robert Wilson",
+      "employee_type": "Full-time"
+    },
+    "financial": {
+      "bank_account": "987654321",
+      "routing_number": "121000248",
+      "direct_deposit": true,
+      "tax_id": "234-56-7890"
+    },
+    "medical": {
+      "insurance_id": "INS-234567",
+      "emergency_contact": {
+        "name": "Bob Smith",
+        "relationship": "Brother",
+        "phone": "555-876-5432"
+      },
+      "medical_conditions": ["Asthma"]
+    }
+  },
+  {
+    "employee_id": "EMP003",
+    "personal_info": {
+      "first_name": "Bob",
+      "last_name": "Wilson",
+      "email": "bob.wilson@company.com",
+      "phone": "555-345-6789",
+      "ssn": "345-67-8901",
+      "date_of_birth": "1988-11-08",
+      "address": {
+        "street": "789 Pine Rd",
+        "city": "Riverside",
+        "state": "TX",
+        "zip": "75001"
+      }
+    },
+    "employment": {
+      "department": "Sales",
+      "position": "Sales Representative",
+      "hire_date": "2021-06-15",
+      "salary": 68000,
+      "manager": "Carol Johnson",
+      "employee_type": "Full-time"
+    },
+    "financial": {
+      "bank_account": "456789123",
+      "routing_number": "111000025",
+      "direct_deposit": true,
+      "tax_id": "345-67-8901"
+    },
+    "medical": {
+      "insurance_id": "INS-345678",
+      "emergency_contact": {
+        "name": "Mary Wilson",
+        "relationship": "Mother",
+        "phone": "555-765-4321"
+      },
+      "medical_conditions": []
+    }
+  },
+  {
+    "employee_id": "EMP004",
+    "personal_info": {
+      "first_name": "Carol",
+      "last_name": "Johnson",
+      "email": "carol.johnson@company.com",
+      "phone": "555-456-7890",
+      "ssn": "456-78-9012",
+      "date_of_birth": "1992-02-14",
+      "address": {
+        "street": "321 Elm St",
+        "city": "Lakewood",
+        "state": "FL",
+        "zip": "33101"
+      }
+    },
+    "employment": {
+      "department": "Sales",
+      "position": "Sales Manager",
+      "hire_date": "2018-09-01",
+      "salary": 110000,
+      "manager": "David Miller",
+      "employee_type": "Full-time"
+    },
+    "financial": {
+      "bank_account": "789123456",
+      "routing_number": "267084131",
+      "direct_deposit": true,
+      "tax_id": "456-78-9012"
+    },
+    "medical": {
+      "insurance_id": "INS-456789",
+      "emergency_contact": {
+        "name": "Tom Johnson",
+        "relationship": "Husband",
+        "phone": "555-654-3210"
+      },
+      "medical_conditions": ["Migraine"]
+    }
+  },
+  {
+    "employee_id": "EMP005",
+    "personal_info": {
+      "first_name": "David",
+      "last_name": "Miller",
+      "email": "david.miller@company.com",
+      "phone": "555-567-8901",
+      "ssn": "567-89-0123",
+      "date_of_birth": "1987-09-30",
+      "address": {
+        "street": "654 Maple Dr",
+        "city": "Hillview",
+        "state": "WA",
+        "zip": "98001"
+      }
+    },
+    "employment": {
+      "department": "Executive",
+      "position": "Director of Sales",
+      "hire_date": "2017-01-15",
+      "salary": 150000,
+      "manager": "CEO",
+      "employee_type": "Full-time"
+    },
+    "financial": {
+      "bank_account": "321654987",
+      "routing_number": "325081403",
+      "direct_deposit": true,
+      "tax_id": "567-89-0123"
+    },
+    "medical": {
+      "insurance_id": "INS-567890",
+      "emergency_contact": {
+        "name": "Lisa Miller",
+        "relationship": "Wife",
+        "phone": "555-543-2109"
+      },
+      "medical_conditions": ["High Cholesterol"]
+    }
+  },
+  {
+    "employee_id": "EMP006",
+    "personal_info": {
+      "first_name": "Emma",
+      "last_name": "Williams",
+      "email": "emma.williams@company.com",
+      "phone": "555-678-9012",
+      "ssn": "678-90-1234",
+      "date_of_birth": "1993-12-05",
+      "address": {
+        "street": "987 Cedar Ln",
+        "city": "Greenfield",
+        "state": "OR",
+        "zip": "97001"
+      }
+    },
+    "employment": {
+      "department": "HR",
+      "position": "HR Specialist",
+      "hire_date": "2022-04-01",
+      "salary": 72000,
+      "manager": "Grace Martinez",
+      "employee_type": "Full-time"
+    },
+    "financial": {
+      "bank_account": "654321098",
+      "routing_number": "323371076",
+      "direct_deposit": true,
+      "tax_id": "678-90-1234"
+    },
+    "medical": {
+      "insurance_id": "INS-678901",
+      "emergency_contact": {
+        "name": "James Williams",
+        "relationship": "Father",
+        "phone": "555-432-1098"
+      },
+      "medical_conditions": ["Allergies"]
+    }
+  },
+  {
+    "employee_id": "EMP007",
+    "personal_info": {
+      "first_name": "Frank",
+      "last_name": "Garcia",
+      "email": "frank.garcia@company.com",
+      "phone": "555-789-0123",
+      "ssn": "789-01-2345",
+      "date_of_birth": "1986-06-18",
+      "address": {
+        "street": "147 Birch Ct",
+        "city": "Fairview",
+        "state": "CO",
+        "zip": "80301"
+      }
+    },
+    "employment": {
+      "department": "IT",
+      "position": "System Administrator",
+      "hire_date": "2020-11-01",
+      "salary": 85000,
+      "manager": "Henry Brown",
+      "employee_type": "Full-time"
+    },
+    "financial": {
+      "bank_account": "098765432",
+      "routing_number": "102001017",
+      "direct_deposit": true,
+      "tax_id": "789-01-2345"
+    },
+    "medical": {
+      "insurance_id": "INS-789012",
+      "emergency_contact": {
+        "name": "Maria Garcia",
+        "relationship": "Sister",
+        "phone": "555-321-0987"
+      },
+      "medical_conditions": ["Back Pain"]
+    }
+  },
+  {
+    "employee_id": "EMP008",
+    "personal_info": {
+      "first_name": "Grace",
+      "last_name": "Martinez",
+      "email": "grace.martinez@company.com",
+      "phone": "555-890-1234",
+      "ssn": "890-12-3456",
+      "date_of_birth": "1991-04-27",
+      "address": {
+        "street": "258 Spruce Way",
+        "city": "Midtown",
+        "state": "AZ",
+        "zip": "85001"
+      }
+    },
+    "employment": {
+      "department": "HR",
+      "position": "HR Manager",
+      "hire_date": "2019-08-15",
+      "salary": 98000,
+      "manager": "David Miller",
+      "employee_type": "Full-time"
+    },
+    "financial": {
+      "bank_account": "567890123",
+      "routing_number": "122105278",
+      "direct_deposit": true,
+      "tax_id": "890-12-3456"
+    },
+    "medical": {
+      "insurance_id": "INS-890123",
+      "emergency_contact": {
+        "name": "Carlos Martinez",
+        "relationship": "Husband",
+        "phone": "555-210-9876"
+      },
+      "medical_conditions": ["Anxiety"]
+    }
+  }
+]
