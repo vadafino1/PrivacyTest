@@ -1,0 +1,99 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs (allow our intentional vulnerable logs)
+*.log
+!application.log
+!access.log
+!error.log
+!audit.log
+!payment_logs.txt
+
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# Database files (allow our intentional vulnerable data)
+*.db
+*.sqlite
+*.sqlite3
+!backup.sql
+
+# Temporary files
+tmp/
+temp/
+
+# Coverage reports
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+
+# Docker
+.dockerignore
+
+# Environment variables (allow our intentional vulnerable .env)
+.env.local
+.env.production
+.env.test
+!.env
+
+# Backup files
+*.bak
+*.backup
+
+# Real secrets (prevent accidental commits)
+.env.real
+config.real.json
+secrets/
+private_keys/
+*.pem
+*.key
+*.crt
+
+# Note: This .gitignore allows intentionally vulnerable files
+# (.env, config.json, *.log, backup.sql, etc.) for testing purposes
+# but blocks real secrets and sensitive files
