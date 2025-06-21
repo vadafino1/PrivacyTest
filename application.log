@@ -1,0 +1,30 @@
+[2024-01-20 10:15:23.456] INFO: Application started with configuration: {"db_password":"SuperSecretPassword123!","api_key":"sk_live_fake123xyz789_secret_key"}
+[2024-01-20 10:15:24.789] DEBUG: Database connection established: postgresql://admin:SuperSecretPassword123!@localhost:5432/privacy_test_db
+[2024-01-20 10:16:45.123] INFO: User authentication attempt - Username: john.doe@email.com, Password: password123, IP: 192.168.1.100
+[2024-01-20 10:16:45.456] DEBUG: SQL Query executed: SELECT * FROM users WHERE email='john.doe@email.com' AND ssn='123-45-6789'
+[2024-01-20 10:16:45.789] INFO: Authentication successful for user: {"id":1,"email":"john.doe@email.com","ssn":"123-45-6789","credit_card":"4532-1234-5678-9012"}
+[2024-01-20 10:17:12.345] DEBUG: Payment processing started: {"user_id":1,"amount":299.99,"card_number":"4532-1234-5678-9012","cvv":"123","billing_address":"123 Main St, Anytown, NY 12345"}
+[2024-01-20 10:17:13.678] INFO: Stripe API call with key: sk_live_fake123xyz789_secret_key
+[2024-01-20 10:17:14.901] DEBUG: Payment response: {"status":"success","transaction_id":"txn_123456","customer":{"email":"john.doe@email.com","phone":"555-123-4567"}}
+[2024-01-20 10:18:30.234] ERROR: Failed login attempt - Username: admin, Password: admin123, IP: 10.0.0.50
+[2024-01-20 10:19:45.567] DEBUG: User session created: {"session_id":"sess_abc123","user_data":{"id":2,"username":"jane_smith","email":"jane.smith@gmail.com","ssn":"987-65-4321","medical_conditions":["diabetes","hypertension"]}}
+[2024-01-20 10:20:15.890] INFO: API request to external service: https://api.analytics.com/track?api_key=UA-123456789-1&user_email=jane.smith@gmail.com&ssn=987-65-4321
+[2024-01-20 10:21:30.123] DEBUG: Cache storing user data: {"key":"user:3","value":{"name":"Bob Johnson","ssn":"555-12-3456","credit_score":720,"income":67500,"medical_history":["asthma","allergies"]}}
+[2024-01-20 10:22:45.456] WARN: Unencrypted data transmission detected: {"endpoint":"http://payment-gateway.com","data":{"card":"4111-1111-1111-1111","cvv":"789","amount":150.00}}
+[2024-01-20 10:23:00.789] DEBUG: Environment variables loaded: {"AWS_ACCESS_KEY_ID":"AKIAIOSFODNN7EXAMPLE","AWS_SECRET_ACCESS_KEY":"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY","STRIPE_KEY":"sk_live_fake123xyz789_secret_key"}
+[2024-01-20 10:24:15.012] INFO: User profile updated: {"user_id":4,"changes":{"email":"alice.brown@test.com","phone":"555-0321","ssn":"222-33-4444","emergency_contact":"555-9876"}}
+[2024-01-20 10:25:30.345] DEBUG: JWT token generated with payload: {"user_id":5,"email":"charlie.davis@email.net","ssn":"777-88-9999","is_admin":true,"permissions":["read_all_users","delete_users"]}
+[2024-01-20 10:26:45.678] ERROR: Database query failed: SELECT * FROM users WHERE ssn='111-22-3333' - Error: Connection timeout (password: SuperSecretPassword123!)
+[2024-01-20 10:27:00.901] INFO: Bulk user export initiated by admin@company.com - Exporting 10000 users with full PII to CSV
+[2024-01-20 10:28:15.234] DEBUG: Redis cache key set: user:sessions:6 = {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...","user":{"ssn":"444-55-6666","credit_card":"4000-0000-0000-0002"}}
+[2024-01-20 10:29:30.567] WARN: Sensitive data logged in production: Customer SSN: 666-77-8888, Credit Card: 4222-2222-2222-2, Medical Record ID: MED123456
+[2024-01-20 10:30:45.890] DEBUG: Third-party API credentials: {"google":"AIzaSyDxyz123456789abcdefghijklmnopqrstuvw","facebook":"a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6","twitter":"1234567890abcdefghijklmnopqrstuvwxyzABCDEF"}
+[2024-01-20 10:31:00.123] INFO: Password reset email sent to helen.martinez@email.com with temporary password: TempPass123!
+[2024-01-20 10:32:15.456] DEBUG: MongoDB connection string: mongodb://admin:mongopassword@cluster0.mongodb.net/production?retryWrites=true&w=majority
+[2024-01-20 10:33:30.789] ERROR: Unhandled exception in payment module: {"error":"Invalid card","user_data":{"id":7,"email":"edward.taylor@personal.org","card":"4000-0000-0000-0002","cvv":"147"},"stack":"Error: Invalid card\n    at PaymentProcessor.process (/app/payment.js:45:11)\n    at processPayment (/app/server.js:234:15)"}
+[2024-01-20 10:34:45.012] INFO: Health check endpoint accessed - System info: {"db_status":"connected","db_password":"SuperSecretPassword123!","redis_password":"RedisPassword123!","active_users":1523}
+[2024-01-20 10:35:00.345] DEBUG: User geolocation tracked: {"user_id":8,"ip":"192.168.1.150","location":{"lat":40.7128,"lng":-74.0060,"city":"New York","country":"US"},"device":{"id":"device_abc123","fingerprint":"a1b2c3d4e5f6"}}
+[2024-01-20 10:36:15.678] WARN: Admin override used: admin@company.com accessed user account without authorization - Target user SSN: 888-99-0000, Credit Card: 4444-4444-4444-4448
+[2024-01-20 10:37:30.901] DEBUG: Webhook received from Stripe: {"event":"payment.succeeded","customer":{"email":"george.thomas@test.net","metadata":{"ssn":"888-99-0000","phone":"555-0369"}},"amount":449.99}
+[2024-01-20 10:38:45.234] INFO: Compliance audit data exported: 50000 user records including SSN, medical data, financial information sent to auditor@external.com
+[2024-01-20 10:40:00.567] DEBUG: Application shutdown - Dumping memory: {"sessions":{"user_1":{"token":"abc123","ssn":"123-45-6789"},"user_2":{"token":"def456","ssn":"987-65-4321"}},"cache":{"credentials":{"aws":"AKIAIOSFODNN7EXAMPLE/wJalrXUtnFEMI"}}}

@@ -1,0 +1,102 @@
+[2024-01-20 10:15:00.123] ERROR: Database connection failed
+Stack trace:
+  at Object.<anonymous> (/app/server.js:15:23)
+  at Module._compile (internal/modules/cjs/loader.js:1063:30)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+Connection string: postgresql://admin:SuperSecretPassword123!@localhost:5432/privacy_test_db
+Environment: production
+AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+[2024-01-20 10:17:45.456] ERROR: Payment processing failed for user john.doe@email.com
+Error: Invalid credit card number
+User details: {"id":1,"email":"john.doe@email.com","ssn":"123-45-6789","card":"4532-1234-5678-9012","cvv":"123"}
+Stack trace:
+  at PaymentProcessor.validateCard (/app/payment.js:45:11)
+  at PaymentProcessor.process (/app/payment.js:78:15)
+  at async /app/routes/payment.js:23:20
+API Key used: sk_live_fake123xyz789_secret_key
+Request body: {"amount":299.99,"currency":"USD","card_number":"4532-1234-5678-9012","cvv":"123","billing_zip":"12345"}
+
+[2024-01-20 10:19:30.789] ERROR: Unhandled Promise Rejection
+TypeError: Cannot read property 'ssn' of undefined
+  at getUserData (/app/services/user.js:89:25)
+  at processTicksAndRejections (internal/process/task_queues.js:93:5)
+User context: {"query":"SELECT * FROM users WHERE ssn='987-65-4321'","connection":"mysql://root:MySecretPassword123!@localhost:3306/user_data"}
+Memory dump: {"heap":{"users":[{"ssn":"123-45-6789","password":"5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"}]}}
+
+[2024-01-20 10:21:15.012] ERROR: Authentication bypass attempted
+IP: 10.0.0.50
+User-Agent: sqlmap/1.4.7#stable (http://sqlmap.org)
+Payload: admin' OR '1'='1
+Database query: SELECT * FROM users WHERE username='admin' OR '1'='1' AND password='xxx'
+System users table exposed: [{"id":1,"username":"admin","password_hash":"admin123","api_key":"admin-api-key-xyz789"}]
+
+[2024-01-20 10:23:00.345] ERROR: File system access violation
+Path traversal attempt: ../../../../etc/passwd
+Actual path resolved: /etc/passwd
+File contents partially read:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+Application secrets exposed in environment:
+JWT_SECRET=hardcoded-jwt-secret-key-12345
+STRIPE_KEY=sk_live_fake123xyz789_secret_key
+
+[2024-01-20 10:25:30.678] ERROR: Medical record access without authorization
+Unauthorized access by: developer@company.com
+Patient records accessed: [{"patient_id":"PAT123","ssn":"555-12-3456","conditions":["diabetes","heart disease"],"medications":["insulin","metoprolol"]}]
+Database credentials in stack: mongodb://admin:mongopassword@cluster0.mongodb.net/medical_records
+
+[2024-01-20 10:27:45.901] ERROR: Data breach detected
+Endpoint: /api/export/all-users
+Requester: unknown@external.com
+Data exported: 50000 user records
+Sample data: [{"name":"Jane Smith","ssn":"987-65-4321","credit_card":"5555-4444-3333-2222","medical_history":["depression","anxiety"]}]
+S3 bucket exposed: s3://privacy-test-bucket/exports/users_full_2024.csv
+AWS credentials in memory: AKIAIOSFODNN7EXAMPLE/wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+[2024-01-20 10:29:00.234] ERROR: Redis cache poisoning detected
+Malicious data injected: {"admin":true,"ssn":"*","access_all_users":true}
+Cache keys exposed: ["user:1:ssn:123-45-6789","user:2:ssn:987-65-4321","api:keys:stripe:sk_live_fake123xyz789_secret_key"]
+Redis connection: redis://default:RedisPassword123!@localhost:6379
+
+[2024-01-20 10:31:15.567] ERROR: GDPR violation - Data retention policy exceeded
+Users with data older than retention period: 15000
+Sample user data that should be deleted: {"id":1000,"email":"old.user@example.com","ssn":"111-22-3333","created":"2020-01-01","last_login":"2020-06-01"}
+Backup locations still containing old data:
+- /backups/users_2020.sql (contains 25000 SSNs)
+- s3://privacy-test-bucket/archive/users_2020.json
+
+[2024-01-20 10:33:30.890] ERROR: Third-party API credential leak
+API call failed to: https://api.analytics.com/track
+Credentials exposed in error: {"api_key":"UA-123456789-1","secret":"analytics_secret_key_123"}
+Request contained user PII: {"users":[{"email":"test@example.com","ssn":"777-88-9999","location":{"lat":40.7128,"lng":-74.0060}}]}
+Full request logged to: /var/log/api_requests.log (world-readable)
+
+[2024-01-20 10:35:45.123] ERROR: Encryption key exposure
+Failed to encrypt user data
+Encryption key in stack trace: AES256-ENCRYPTION-KEY-32-CHARACTERS-LONG-123456789
+Affected users: [{"id":5000,"ssn":"888-99-0000","credit_card":"4444-4444-4444-4448"}]
+Key storage location exposed: /app/config/keys/master.key (plaintext)
+
+[2024-01-20 10:37:00.456] ERROR: Admin panel security breach
+Unauthorized admin access from IP: 192.168.100.50
+Admin credentials in logs: username=admin, password=AdminPassword123!
+Actions performed: ["exported_all_users","viewed_payment_logs","accessed_medical_records"]
+Audit trail disabled by: admin@company.com
+
+[2024-01-20 10:39:15.789] ERROR: Webhook signature verification failed
+Webhook endpoint: /webhook/payment
+Invalid signature but request processed anyway
+Payment data in request: {"customer_email":"victim@example.com","card_last4":"9012","amount":5000,"ssn":"123-45-6789"}
+Webhook secret exposed: whsec_test123456789
+
+[2024-01-20 10:40:30.012] CRITICAL: Complete system compromise
+Root access obtained through: command injection in image upload
+System information exposed:
+- OS: Linux 4.15.0-142-generic
+- Node version: v14.17.0
+- Running as: root
+- Environment variables: {"DB_PASSWORD":"SuperSecretPassword123!","JWT_SECRET":"hardcoded-jwt-secret-key-12345"}
+- All user sessions: [{"user":"admin","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...","ssn":"000-00-0000"}]
+- Database dumps created at: /tmp/full_db_dump.sql (contains all user PII)
